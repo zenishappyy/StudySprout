@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudySprout — small steps, brighter days ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand-logo">
+        <span class="logo-sprout" aria-hidden="true">🌱</span>
+        <span>StudySprout</span>
+      </a>
+
+      <div class="nav-controls-mobile">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="siteNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#preview">6-Page Preview</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="currency-selector-wrap">
+            <label for="currencySelect" class="sr-only">Display Currency</label>
+            <select id="currencySelect" class="currency-select" aria-label="Select display currency">
+              <option value="USD" selected>USD ($)</option>
+              <option value="INR">INR (₹)</option>
+              <option value="GBP">GBP (£)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="CAD">CAD (CA$)</option>
+              <option value="AUD">AUD (A$)</option>
+            </select>
+          </div>
+          <a href="#featured" class="btn btn-sm btn-primary">Explore Planner</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Home / Hero Section -->
+    <section class="hero section-padding" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content fade-in">
+          <span class="pill-badge bg-lavender">Digital Stationery for Gentle Productivity</span>
+          <h1>Plan your semester without the overwhelm.</h1>
+          <p class="tagline">small steps, brighter days ♡</p>
+          <p class="hero-description">
+            Thoughtfully designed digital planners, study trackers, and calm academic templates crafted to help students stay organized at their own pace.
+          </p>
+          <div class="hero-actions">
+            <a href="#featured" class="btn btn-primary">Meet The Soft Start Planner</a>
+            <a href="#preview" class="btn btn-secondary">Peek Inside (6 Pages)</a>
+          </div>
+          <div class="hero-highlights">
+            <span>✦ Six-Page A4 Digital PDF</span>
+            <span>✦ Tablet Annotation &amp; Printing</span>
+            <span>✦ Simple &amp; Student-Friendly</span>
+          </div>
+        </div>
+
+        <!-- CSS-Based Hero Stationery Collage -->
+        <div class="hero-visual fade-in" aria-hidden="true">
+          <div class="hero-blob bg-pink"></div>
+          <div class="mockup-stack">
+            <div class="mini-sheet sheet-back bg-butter">
+              <div class="sheet-header">Weekly Focus</div>
+              <div class="sheet-lines">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="mini-sheet sheet-front">
+              <div class="sheet-top-bar">
+                <span class="dot dot-pink"></span>
+                <span class="dot dot-sage"></span>
+                <span class="dot dot-butter"></span>
+              </div>
+              <div class="sheet-badge bg-sage">Today's Gentle Goals</div>
+              <h3>The Soft Start</h3>
+              <ul class="mock-checklist">
+                <li><span class="check checked">✓</span> Review lecture notes (25m)</li>
+                <li><span class="check checked">✓</span> Outline assignment intro</li>
+                <li><span class="check"></span> Drink water &amp; stretch</li>
+              </ul>
+              <div class="mock-mood">
+                <span>Energy:</span>
+                <span class="mood-pill bg-pink">Calm</span>
+                <span class="mood-pill bg-lavender">Steady</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Shop Section -->
+    <section class="shop section-padding" id="shop">
+      <div class="container">
+        <div class="section-heading text-center fade-in">
+          <span class="pill-badge bg-sage">Digital Shelf</span>
+          <h2>Student Planners &amp; Study Resources</h2>
+          <p>Lightweight, distraction-free A4 PDF tools designed for digital note-taking apps or home printing.</p>
+        </div>
+
+        <div class="shop-grid shop-grid-single">
+          <article class="product-card fade-in">
+            <div class="card-thumb bg-pink">
+              <div class="css-mini-cover">
+                <span class="cover-tag">First Release</span>
+                <h4>The Soft Start<br />Student Planner</h4>
+                <small>6 Pages • A4 PDF</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Student Planner</span>
+                <span class="price" data-price-usd="2.99">$2.99</span>
+              </div>
+              <h3>The Soft Start Student Planner</h3>
+              <p>A gentle six-page A4 PDF planner with weekly and daily planning, assignment tracking, exam revision, and habit tracking.</p>
+              <div class="card-actions">
+                <a href="#featured" class="btn btn-primary btn-full">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Featured Product Section -->
+    <section class="featured section-padding" id="featured">
+      <div class="container">
+        <div class="featured-box fade-in">
+          <div class="featured-visual bg-peach">
+            <!-- CSS Tablet Frame Mockup -->
+            <div class="tablet-frame">
+              <div class="tablet-camera"></div>
+              <div class="tablet-screen">
+                <div class="planner-spread">
+                  <div class="spread-left">
+                    <span class="spread-label bg-pink">StudySprout Edition</span>
+                    <h4>The Soft Start<br />Student Planner</h4>
+                    <p class="spread-sub">small steps, brighter days ♡</p>
+                    <div class="spread-swatches">
+                      <span style="background:#F4DCE5"></span>
+                      <span style="background:#E0EDE2"></span>
+                      <span style="background:#F8EFCF"></span>
+                      <span style="background:#E8E5F5"></span>
+                      <span style="background:#F6E5D9"></span>
+                    </div>
+                  </div>
+                  <div class="spread-right">
+                    <div class="spread-widget bg-sage">
+                      <strong>Included Inside</strong>
+                      <span>6 Undated Core Pages</span>
+                    </div>
+                    <div class="spread-widget bg-butter">
+                      <strong>Format</strong>
+                      <span>Six-Page A4 Digital PDF</span>
+                    </div>
+                    <div class="spread-widget bg-lavender">
+                      <strong>Use Anywhere</strong>
+                      <span>Digital Annotation &amp; Print</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-details">
+            <span class="pill-badge bg-pink">Featured Release</span>
+            <h2>The Soft Start Student Planner</h2>
+            <div class="featured-price-row">
+              <span class="featured-price" data-price-usd="2.99">$2.99</span>
+              <span class="price-note">Six-page A4 digital PDF • Base price $2.99 USD</span>
+            </div>
+            <p class="currency-disclaimer" id="currencyDisclaimer" aria-live="polite">
+              Prices are anchored at $2.99 USD. Displayed currency conversions use static reference exchange rates for convenience.
+            </p>
+            <p>
+              Built specifically for students who find traditional 300-page planners intimidating. <strong>The Soft Start</strong> gives you six essential, thoughtfully structured A4 pages you can duplicate endlessly across every week and semester.
+            </p>
+            <ul class="feature-list">
+              <li><strong>6 Focused A4 Pages:</strong> Planner Cover, Weekly Study Planner, Daily Planner, Assignments Tracker, Exam &amp; Revision Tracker, and Habit Tracker &amp; Notes.</li>
+              <li><strong>Zero Guilt, All Flexibility:</strong> Completely undated—skip a week without wasting a single page.</li>
+              <li><strong>Soft Pastel Palette:</strong> A gentle, consistent colour scheme for your study sessions.</li>
+            </ul>
+            <div class="featured-cta">
+              <button type="button" class="btn btn-primary info-modal-trigger" data-product-name="The Soft Start Student Planner" data-price-usd="2.99">
+                Preview Product — <span data-price-usd="2.99">$2.99</span>
+              </button>
+              <a href="#preview" class="btn btn-ghost">Inspect All 6 Pages ↓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Product Preview (6 Pages Showcase) -->
+    <section class="preview section-padding" id="preview">
+      <div class="container">
+        <div class="section-heading text-center fade-in">
+          <span class="pill-badge bg-lavender">Inside the Planner</span>
+          <h2>Explore All 6 Pages</h2>
+          <p>Click or press Enter on any page card below to inspect its A4 layout and study purpose up close.</p>
+        </div>
+
+        <div class="pages-grid">
+          <!-- Page 1 -->
+          <div class="page-card fade-in" data-page="1" tabindex="0" role="button" aria-label="Preview Page 1: Planner Cover">
+            <div class="page-mockup bg-pink">
+              <div class="paper-sheet">
+                <div class="p-cover-art">
+                  <span class="p-badge bg-butter">Undated • A4</span>
+                  <h5>The Soft Start</h5>
+                  <div class="p-line short"></div>
+                  <small>Name &amp; Semester</small>
+                </div>
+              </div>
+            </div>
+            <div class="page-info">
+              <span class="page-num">Page 01</span>
+              <h3>Planner Cover</h3>
+              <p>A calm, minimalist cover page with space for your name, term, and study intentions.</p>
+            </div>
+          </div>
+
+          <!-- Page 2 -->
+          <div class="page-card fade-in" data-page="2" tabindex="0" role="button" aria-label="Preview Page 2: Weekly Study Planner">
+            <div class="page-mockup bg-sage">
+              <div class="paper-sheet">
+                <div class="p-header-bar bg-sage">Weekly Study</div>
+                <div class="p-calendar-grid">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="page-info">
+              <span class="page-num">Page 02</span>
+              <h3>Weekly Study Planner</h3>
+              <p>Plan your subjects, weekly priorities, and gentle study goals across the week.</p>
+            </div>
+          </div>
+
+          <!-- Page 3 -->
+          <div class="page-card fade-in" data-page="3" tabindex="0" role="button" aria-label="Preview Page 3: Daily Planner">
+            <div class="page-mockup bg-butter">
+              <div class="paper-sheet">
+                <div class="p-header-bar bg-butter">Daily Planner</div>
+                <div class="p-cols-2">
+                  <div class="p-box"></div>
+                  <div class="p-box"></div>
+                  <div class="p-box"></div>
+                  <div class="p-box"></div>
+                </div>
+              </div>
+            </div>
+            <div class="page-info">
+              <span class="page-num">Page 03</span>
+              <h3>Daily Planner</h3>
+              <p>Organise your top daily tasks, study blocks, and self-care reminders without rigid hour rules.</p>
+            </div>
+          </div>
+
+          <!-- Page 4 -->
+          <div class="page-card fade-in" data-page="4" tabindex="0" role="button" aria-label="Preview Page 4: Assignments Tracker">
+            <div class="page-mockup bg-lavender">
+              <div class="paper-sheet">
+                <div class="p-header-bar bg-lavender">Assignments</div>
+                <div class="p-daily-layout">
+                  <div class="p-list">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="p-bubbles">
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-info">
+              <span class="page-num">Page 04</span>
+              <h3>Assignments Tracker</h3>
+              <p>Keep track of coursework, due dates, priority levels, and completion checkboxes.</p>
+            </div>
+          </div>
+
+          <!-- Page 5 -->
+          <div class="page-card fade-in" data-page="5" tabindex="0" role="button" aria-label="Preview Page 5: Exam & Revision Tracker">
+            <div class="page-mockup bg-peach">
+              <div class="paper-sheet">
+                <div class="p-header-bar bg-peach">Exam Revision</div>
+                <div class="p-table-rows">
+                  <div><span></span><em></em></div>
+                  <div><span></span><em></em></div>
+                  <div><span></span><em></em></div>
+                  <div><span></span><em></em></div>
+                </div>
+              </div>
+            </div>
+            <div class="page-info">
+              <span class="page-num">Page 05</span>
+              <h3>Exam &amp; Revision Tracker</h3>
+              <p>Break down syllabus topics, track revision rounds, and prepare calmly for upcoming exams.</p>
+            </div>
+          </div>
+
+          <!-- Page 6 -->
+          <div class="page-card fade-in" data-page="6" tabindex="0" role="button" aria-label="Preview Page 6: Habit Tracker & Notes">
+            <div class="page-mockup bg-pink">
+              <div class="paper-sheet">
+                <div class="p-header-bar bg-pink">Habits &amp; Notes</div>
+                <div class="p-dot-grid"></div>
+              </div>
+            </div>
+            <div class="page-info">
+              <span class="page-num">Page 06</span>
+              <h3>Habit Tracker &amp; Notes</h3>
+              <p>Build steady daily routines alongside a clean dot-grid notes space for brain dumps and reminders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. About Section -->
+    <section class="about section-padding" id="about">
+      <div class="container about-grid">
+        <div class="about-card bg-sage fade-in">
+          <span class="pill-badge bg-white">Our Philosophy</span>
+          <h2>Why StudySprout?</h2>
+          <p>
+            Student life already comes with enough pressure. Most productivity systems demand rigid 5 AM schedules and color-coded perfection—leaving you burnt out before midterms even arrive.
+          </p>
+          <p>
+            <strong>StudySprout</strong> was created around a softer idea: <em>small steps, brighter days ♡</em>. Instead of overwhelming you with hundreds of cluttered templates, we craft clean, comforting digital stationery that helps you show up gently and make steady progress.
+          </p>
+        </div>
+
+        <div class="values-stack fade-in">
+          <div class="value-item bg-pink">
+            <h3>🌿 Gentle Structure</h3>
+            <p>Clear layouts that guide your focus without boxing you into strict hourly timetables.</p>
+          </div>
+          <div class="value-item bg-butter">
+            <h3>🎨 Calm Aesthetics</h3>
+            <p>Soft pastel tones chosen to feel like a cozy desk setup rather than a harsh spreadsheet.</p>
+          </div>
+          <div class="value-item bg-lavender">
+            <h3>🎒 Student-Friendly Pricing</h3>
+            <p>Accessible digital downloads anchored at <span data-price-usd="2.99">$2.99</span> so quality study tools stay within reach for students worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ Section -->
+    <section class="faq section-padding" id="faq">
+      <div class="container faq-container">
+        <div class="section-heading text-center fade-in">
+          <span class="pill-badge bg-peach">Questions &amp; Answers</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about using StudySprout digital downloads.</p>
+        </div>
+
+        <div class="accordion fade-in">
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>What format do StudySprout planners come in?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>The Soft Start Student Planner is a six-page A4 digital PDF designed for digital annotation or home printing.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>Which apps and devices work with these digital planners?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>You can open the A4 PDF in any compatible PDF reader or note-taking app on tablets, laptops, or phones. App features vary by device.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>Can I print the pages if I prefer pen and paper?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Yes. You can print the six-page A4 PDF for personal use as many times as you need. Check your printer's A4 page scaling settings before printing.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>How does international currency display work?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>The planner's base price is <span data-price-usd="2.99">$2.99</span> (anchored at $2.99 USD). You can switch the display currency in the navigation bar to preview approximate amounts using static reference exchange rates.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>Is this a physical notebook shipped to my address?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>No. This is a digital PDF product; nothing physical is shipped. Ordering and downloads will be enabled once a payment provider is configured.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>When will checkout and downloads be live?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Checkout and file downloads are currently disabled while the storefront is in preview mode. No payments are processed on this site yet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand-logo">
+          <span class="logo-sprout" aria-hidden="true">🌱</span>
+          <span>StudySprout</span>
+        </a>
+        <p class="footer-tagline">small steps, brighter days ♡</p>
+        <p class="footer-note">Cozy digital planners &amp; study tools made with care for students around the world.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#featured">The Soft Start Planner</a></li>
+          <li><a href="#preview">6-Page Preview</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#about">About StudySprout</a></li>
+          <li><a href="#faq">Digital Download FAQ</a></li>
+          <li><span class="placeholder-contact">Official support contact will be published when checkout launches.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 StudySprout. All rights reserved. Digital products for personal student use.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Modal for Page Preview & Storefront Notice -->
+  <div class="modal-backdrop" id="appModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
